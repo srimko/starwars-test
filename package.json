@@ -2,5 +2,9 @@
   "name": "starwars-test",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "simple-parallax-js": "^5.6.2"
+  }
 }

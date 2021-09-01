@@ -54,9 +54,17 @@ nav {
 /* HEADER */
 
 header {
-  display: flex;
-  padding: 100px 0 70px 0;
-  background-image: url(../img/header-bg-2x.png);
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
+  .logo {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
   img {
     margin: auto;
   }
