@@ -22,12 +22,17 @@ npm install -g parcel-bundler && npm install
 
 Pour lancer le mode développement du projet avec [parcel](https://parceljs.org/) lancer la commande ci-dessous. Le projet sera compiler dans le répertoire `dist`.
 
-`npm run`
+```
+npm run
+```
 
 ### Compilation pour la production
 
 Pour lancer la commande de production lancer la commande ci-dessous. Le projet sera compiler dans le répertoire `build`.
-`npm run build`
+
+```
+npm run build
+```
 
 ## Déploiement
 
