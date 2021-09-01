@@ -42,7 +42,7 @@ Uniquement pour les personnes lié à l'équipe du projet.
   vercel --prod
 ```
 
-Une version du site est accécisble via ce lien https://starwars-test-one.vercel.app/
+Une version du site est accessible via ce lien https://starwars-test-one.vercel.app/
 
 ## Stack technique
 
