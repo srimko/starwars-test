@@ -4,9 +4,192 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+ul,
+li,
+p {
   margin: 0;
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
+/* Colors */
+:root {
+  --black: #000000;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #000;
+}
+
+/* NAVIGATION */
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu {
+  --bgColor: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  background-color: var(--bgColor);
+  padding: 15px;
+  &-item {
+    list-style-type: none;
+    font-size: 0.778rem; // 14px
+    line-height: 1.222rem; // 22px
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
+
 /* HEADER */
+
+header {
+  display: flex;
+  padding: 100px 0 70px 0;
+  background-image: url(../img/header-bg-2x.png);
+  img {
+    margin: auto;
+  }
+}
+
+/* MAIN */
+
+h1 {
+  font-size: 1.778rem;
+  line-height: 1.222rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2,
+p {
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1rem; //18px
+  font-weight: 1.222rem; // 22px
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem; //18px
+  font-weight: 1.222rem; // 22px
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.article {
+  display: flex;
+  margin: auto;
+  max-width: 755px;
+  padding: 100px 0;
+  gap: 75px;
+
+  &-smallPadding {
+    padding: 60px 0;
+  }
+
+  &__content {
+    img {
+      &.float-left {
+        float: left;
+        margin: 0 20px 18px 0;
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    &.txt-small {
+      p,
+      li {
+        font-size: 0.778rem; // 14px
+        line-height: 1.333rem; // 24px
+        margin-bottom: 0.667rem; // 12px
+      }
+    }
+  }
+
+  &__ad {
+    img {
+      position: sticky;
+      top: 60px;
+    }
+  }
+
+  &__bandeau {
+    background-size: cover;
+    background-position: center;
+
+    &-kiloren {
+      background-image: url("../img/kiloren-2x.jpg");
+      min-height: 500px;
+    }
+    &-stormtroopers {
+      background-image: url("../img/stormtroopers-2x.jpg");
+      min-height: 250px;
+    }
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 65px 0;
+  text-align: center;
+  font-size: 0.667rem; //12px
+  background: #181818;
+  background-image: url("../img/darthvader_2x.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  color: #9b9b9b;
+
+  a {
+    color: #9b9b9b;
+  }
+
+  &__headline {
+    font-size: 0.778rem; // 14px
+    line-height: 1rem; // 18px
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    &__social {
+      p {
+        font-size: 0.667rem; //12px
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
