@@ -19,11 +19,18 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   // Parallax
-  const image = document.querySelectorAll('.js-parallax')
+  const images = document.querySelectorAll('.js-parallax')
 
-  if (image) {
-    new simpleParallax(image, {
-      scale: 1.8
+  if (images.length > 0) {
+    images.forEach(image => {
+      let scale = 1.8
+      console.log(image)
+      if (image.dataset.scale) {
+        scale = image.dataset.scale
+      }
+      new simpleParallax(image, {
+        scale
+      })
     })
   }
 })
