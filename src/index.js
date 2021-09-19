@@ -1,23 +1,26 @@
 import './assets/styles/style.scss'
 import lazyLoad from './assets/js/lazyLoad'
+import { openMenu, closeMenu } from './assets/js/utils'
 
 import simpleParallax from 'simple-parallax-js'
 
 window.addEventListener('DOMContentLoaded', () => {
 
+  const body = document.querySelector('body')
+
   // Burger menu
   const menuBurger = document.querySelector('.js-menuBurger')
   const closeBtn = document.querySelector('.js-close')
-  const sideNav = document.querySelector('.sidenav')
+  const menu = document.querySelector('.menu')
 
   menuBurger.addEventListener('click', event => {
-    if (sideNav) {
-      sideNav.classList.add('active')
+    if (menu) {
+      openMenu({ menu, menuBurger, closeBtn, body })
     }
   })
   closeBtn.addEventListener('click', event => {
-    if (sideNav) {
-      sideNav.classList.remove('active')
+    if (menu) {
+      closeMenu({ menu, menuBurger, closeBtn, body })
     }
   })
 
@@ -37,8 +40,13 @@ window.addEventListener('DOMContentLoaded', () => {
         })
       })
     }
-
   }
+
+  window.addEventListener('resize', () => {
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      closeMenu({ menu, menuBurger, closeBtn, body })
+    }
+  }, false)
 
   lazyLoad()
 })
