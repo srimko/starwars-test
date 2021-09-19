@@ -52,7 +52,7 @@ Une version du site est accessible via ce lien https://starwars-test-one.vercel.
 
 ## Remarques
 
-1/ J'ai constaté que les icones SVG étaientt plus lourdes que les PNG. De ce fait j'ai intégré les png pour avoir une page plus légère. C'est un peu dommage parce qu'il sera donc impossible de faire des transitions "propre" comme les changements de couleurs au hover, changements de tailles et le plus gros problème est un perte qualité lorsqu'on voudra étirer l'image.
+1/ J'ai constaté que les icones SVG étaient plus lourdes que les PNG. De ce fait j'ai intégré les png pour avoir une page plus légère. C'est un peu dommage parce qu'il sera donc impossible de faire des transitions "propre" comme les changements de couleurs au hover, changements de tailles et le plus gros problème est une perte qualité lorsqu'on voudra étirer l'image.
 
 2/ J'ai ajouté également un favicon qui n'était pas sur la maquette.
 
