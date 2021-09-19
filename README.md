@@ -15,15 +15,15 @@ cd starwars-test
 ```
 
 ```bash
-npm install -g parcel-bundler && npm install
+npm install
 ```
 
 ### Exécution en développement
 
-Pour lancer le mode développement du projet avec [parcel](https://parceljs.org/) lancer la commande ci-dessous. Le projet sera compiler dans le répertoire `dist`.
+Pour lancer le mode développement :
 
 ```
-npm run
+npm run build:dev
 ```
 
 ### Compilation pour la production
@@ -46,7 +46,7 @@ Une version du site est accessible via ce lien https://starwars-test-one.vercel.
 
 ## Stack technique
 
-**Client:** HTML, SASS (BEM), Javascript
+**Client:** HTML, SASS (BEM), Javascript, webpack
 
 **Server:** Vercel
 

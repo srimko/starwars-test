@@ -14,7 +14,7 @@ module.exports = {
   mode: mode,
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     assetModuleFilename: 'assets/[name][ext]'
   },
 
