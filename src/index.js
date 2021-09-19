@@ -1,3 +1,6 @@
+import './assets/styles/style.scss'
+import lazyLoad from './assets/js/lazyLoad'
+
 import simpleParallax from 'simple-parallax-js'
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,19 +21,24 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  // Parallax
-  const images = document.querySelectorAll('.js-parallax')
+  if (window.matchMedia('(min-width: 600px)').matches) {
+    // Parallax
+    const images = document.querySelectorAll('.js-parallax')
 
-  if (images.length > 0) {
-    images.forEach(image => {
-      let scale = 1.8
-      console.log(image)
-      if (image.dataset.scale) {
-        scale = image.dataset.scale
-      }
-      new simpleParallax(image, {
-        scale
+    if (images.length > 0) {
+      images.forEach(image => {
+        let scale = 1.8
+        console.log(image)
+        if (image.dataset.scale) {
+          scale = image.dataset.scale
+        }
+        new simpleParallax(image, {
+          scale
+        })
       })
-    })
+    }
+
   }
+
+  lazyLoad()
 })

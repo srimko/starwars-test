@@ -7,11 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Star wars test - Cédrick Alexandre">
   <meta name="robots" content="index, nofollow">
-  <link rel="shortcut icon" href="/assets/img/favicon-sw-badbatch-512x512_c4b78f16.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/favicon-sw-badbatch-512x512_c4b78f16.png" type="image/x-icon">
   <title>Star Wars</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/assets/scss/style.scss">
 </head>
 
 <body>
@@ -40,9 +37,15 @@
     <img src="./assets/img/menu.png" alt="menu burger" class="burger js-menuBurger hide-desktop">
   </nav>
 
-  <header>
-    <img src="./assets/img/logo.png" alt="Star Wars logo" class="logo">
-    <img src="./assets/img/header-bg-2x.png" alt="stars" class="js-parallax">
+  <header class="lazy">
+    <picture>
+      <source media="(min-width: 1024px)" srcset="./assets/img/logo-starWars@2x-min.png">
+      <img src="./assets/img/logo-mobile.png" alt="Star Wars logo" class="logo">
+    </picture>
+    <picture>
+      <source media="(min-width: 1024px)" srcset="./assets/img/header-bg-2x-min.png">
+      <img src="./assets/img/header-bg-2x-mobile.png" alt="stars" class="js-parallax">
+    </picture>
   </header>
 
   <main class="container">
@@ -64,18 +67,23 @@
           bannière du « Premier
           Ordre ».</p>
 
-        <p>Un mystérieux guerrier, <a href="https://fr.wikipedia.org/wiki/Kylo_Ren" target="_blank">Kylo Ren</a>, semble
-          vouer un culte à <a href="https://fr.wikipedia.org/wiki/Kylo_Ren" target="_blank">Dark Vador</a> et pourchasse
+        <p>Un mystérieux guerrier, <a rel="noopener" href="https://fr.wikipedia.org/wiki/Kylo_Ren" target="_blank">Kylo
+            Ren</a>, semble
+          vouer un culte à <a rel="noopener" href="https://fr.wikipedia.org/wiki/Kylo_Ren" target="_blank">Dark
+            Vador</a> et pourchasse
           les ennemis du Premier Ordre à travers la galaxie. Au même moment, une jeune femme nommée Rey, pilleuse
           d'épaves sur la planète
-          désertique Jakku, va faire la rencontre de Finn, un <a href="https://fr.wikipedia.org/wiki/Stormtrooper"
-            target="_blank">Stormtrooper</a> en fuite, une rencontre qui bouleversera sa
+          désertique Jakku, va faire la rencontre de Finn, un <a rel="noopener"
+            href="https://fr.wikipedia.org/wiki/Stormtrooper" target="_blank">Stormtrooper</a> en fuite, une rencontre
+          qui bouleversera sa
           vie.</p>
 
         <p>Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas fini avec la tyrannie et l’oppression. Les
           membres de l'Alliance rebelle, devenus la « <a
-            hre="https://fr.wikipedia.org/wiki/R%C3%A9sistance_(Star_Wars)">Résistance</a> », combattent les vestiges de
-          l'Empire réunis sous la bannière du « <a href="https://fr.wikipedia.org/wiki/Premier_Ordre">Premier
+            href="https://fr.wikipedia.org/wiki/R%C3%A9sistance_(Star_Wars)">Résistance</a> », combattent les vestiges
+          de
+          l'Empire réunis sous la bannière du « <a rel="noopener"
+            href="https://fr.wikipedia.org/wiki/Premier_Ordre">Premier
             Ordre</a>».</p>
 
         <p>Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark Vador et pourchasse les ennemis du Premier
@@ -85,12 +93,12 @@
       </div>
 
       <aside class="article__ad">
-        <img src="/assets/img/ad.jpg" alt="">
+        <img src="./assets/img/ad.jpg" alt="ad" width="300" height="600" loading="lazy">
       </aside>
 
     </section>
 
-    <section class="article__bandeau article__bandeau-kyloren js-parallax" data-scale="1">
+    <section class="article__bandeau article__bandeau-kyloren js-parallax lazy" data-scale="1">
     </section>
 
     <section class="article article-smallPadding">
@@ -99,7 +107,8 @@
 
         <h1>A long time ago, in a galaxy far, far away…</h1>
 
-        <img src="/assets/img/r2d2_c3p0-2x.jpg" alt="r2d2_c3p0" class="float-left">
+        <img src="./assets/img/r2d2_c3p0-2x.jpg" alt="r2d2_c3p0" class="float-left" width="300" height="290"
+          loading="lazy">
 
         <p>La Guerre des étoiles (titre original Star Wars, soit littéralement Guerres Stellaires ) est une épopée
           cinématographique de science-fiction créée par George Lucas, considérée comme un élément phare du space opera.
@@ -117,11 +126,12 @@
         <ul>
           <li>- Il fait appel à des références connues et appréciées des jeunes de l'époque : films de cape et d'épée,
             westerns, péplums, contes de fées et même <strong>le Seigneur des Anneaux</strong> de J.R. Tolkien ; cette
-            œuvre n'apparaît pas comme de la science-fiction au sens strict mais plutôt comme du <i>space fantasy.</li>
+            œuvre n'apparaît pas comme de la science-fiction au sens strict mais plutôt comme du <i>space fantasy</i>.
+          </li>
           <li>- Les effets spéciaux, supervisés par Ken Ralston, étaient réellement novateurs, avec notamment la
             participation de John Dykstra (qui a également participé au premier film de <strong>Star Trek</strong>), qui
             avait développé une nouvelle manière d'animer les maquettes des vaisseaux en coordonnant leurs mouvements
-            par ordinateur (Dykstraflex).
+            par ordinateur (Dykstraflex).</li>
           <li>- Le film a développé un univers cohérent, avec, comme préoccupation constante, autant la création d'une
             ambiance que l'action proprement dite.</li>
           <li>- La musique, composée par John Williams, introduit des thèmes récurrents et des leitmotivs (procédé
@@ -130,7 +140,7 @@
       </div>
     </section>
 
-    <section class="article__bandeau article__bandeau-stormtroopers"></section>
+    <section class="article__bandeau article__bandeau-stormtroopers lazy"></section>
 
   </main>
 
@@ -138,33 +148,32 @@
     <p class="footer__headline"><strong>TM Lucasfilm</strong> Ltd. All Rights Reserved.</p>
     <div class="footer__content">
       <ul>
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Legal Notices</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <li><a rel="noopener" href="#">Terms of Use</a></li>
+        <li><a rel="noopener" href="#">Legal Notices</a></li>
+        <li><a rel="noopener" href="#">Privacy Policy</a></li>
       </ul>
 
       <ul>
-        <li><a href="#">Your California Privacy Rights</a></li>
-        <li><a href="#">Star Wars at Disney Store</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <li><a rel="noopener" href="#">Your California Privacy Rights</a></li>
+        <li><a rel="noopener" href="#">Star Wars at Disney Store</a></li>
+        <li><a rel="noopener" href="#">Privacy Policy</a></li>
       </ul>
 
       <div class="footer__content__social">
         <p>FOLLOW STAR WARS</p>
         <ul>
-          <li><a href="https://www.facebook.com/StarWars.fr/" target="_blank"><img src="/assets/img/icon_facebook.png"
-                alt="Facebook log" /></a></li>
-          <li><a href="https://twitter.com/starwars" target="_blank"><img src="/assets/img/icon_twitter.png"
-                alt="Twitter logo" /></a></li>
-          <li><a href="https://www.instagram.com/starwars/" target="_blank"><img src="/assets/img/icon_instagram.png"
-                alt="Instagram logo" /></a></li>
+          <li><a rel="noopener" href="https://www.facebook.com/StarWars.fr/" target="_blank"><img
+                src="./assets/img/icon_facebook.svg" alt="Facebook log" width="32" height="32" /></a></li>
+          <li><a rel="noopener" href="https://twitter.com/starwars" target="_blank"><img
+                src="./assets/img/icon_twitter.svg" alt="Twitter logo" width="32" height="27" /></a></li>
+          <li><a rel="noopener" href="https://www.instagram.com/starwars/" target="_blank"><img
+                src="./assets/img/icon_instagram.svg" alt="Instagram logo" width="34" height="34" /></a></li>
         </ul>
       </div>
 
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
