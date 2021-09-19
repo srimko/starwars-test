@@ -1,0 +1,149 @@
+@use "reset";
+@use "fonts";
+@use "variables";
+@use "header";
+@use "navigation";
+@use "footer";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--black);
+  font-size: 18px;
+}
+/* MAIN */
+
+h1 {
+  font-size: 1.778rem;
+  line-height: 1.222rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2,
+p {
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1rem; //18px
+  font-weight: 1.222rem; // 22px
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem; //18px
+  font-weight: 1.222rem; // 22px
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.article {
+  display: flex;
+  margin: auto;
+  max-width: 755px;
+  padding: 100px 0;
+  gap: 75px;
+
+  &-smallPadding {
+    padding: 60px 0;
+  }
+
+  &__content {
+    img {
+      &.float-left {
+        float: left;
+        margin: 0 20px 18px 0;
+      }
+    }
+
+    a {
+      color: var(--black);
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    &.txt-small {
+      p,
+      li {
+        font-size: 0.778rem; // 14px
+        line-height: 1.333rem; // 24px
+        margin-bottom: 0.667rem; // 12px
+      }
+    }
+  }
+
+  &__ad {
+    img {
+      position: sticky;
+      top: 60px;
+    }
+  }
+
+  &__bandeau {
+    background-size: cover;
+    background-position: center;
+
+    &.lazy {
+      background-image: none;
+      background-color: var(--lazyColor);
+    }
+
+    &-kyloren {
+      background-image: url("../img/kiloren-2x-min.jpg");
+      min-height: 500px;
+    }
+    &-stormtroopers {
+      background-image: url("../img/stormtroopers-2x-min.jpg");
+      min-height: 250px;
+    }
+  }
+}
+
+.hide-desktop {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  /* NAVIGATION */
+
+  h1 {
+    line-height: inherit;
+  }
+  .article {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+
+    &__ad {
+      display: none;
+    }
+
+    &__bandeau {
+      &-kiloren {
+        max-height: 400px;
+      }
+    }
+
+    &__content {
+      img {
+        &.float-left {
+          float: none;
+          margin: 0 0 30px 0;
+        }
+      }
+    }
+  }
+}
