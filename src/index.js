@@ -31,7 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
     if (images.length > 0) {
       images.forEach(image => {
         let scale = 1.8
-        console.log(image)
         if (image.dataset.scale) {
           scale = image.dataset.scale
         }
